@@ -1,0 +1,73 @@
+
+  <div class="row border">
+     
+    <div class="col-md-12 order-md-1"> 
+        
+        <form class="needs-validation " novalidate="" method="POST" action="/signup" >
+            <div class="signup">
+                <h4 class="text-center fontweight800">Sign Up</h4>
+            </div>            
+            <div class="row">
+                <div class="col-md-6 mb-3"> 
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name" value="" required="">
+                    <div class="invalid-feedback">
+                        First name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3"> 
+                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name" value="" required="">
+                    <div class="invalid-feedback">
+                        Last name is required.
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="row">
+                <div class="col-md-12 mb-3"> 
+                    <input type="email" class="form-control" name="email" id="email" placeholder="E-mail">
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-3"> 
+                    <input type="password"   class="form-control" name="password" id="password" placeholder="Password" required  pattern=".{8,}"  >
+                    
+                    <div class="invalid-feedback ">
+                        Please enter 8 character password.
+                    </div>
+
+                    <label for="password" class="custmessage">At least 8 characters </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">  
+                    <input type="text" class="form-control" name="phonenumber" id="phonenumber" placeholder="Phone Number">
+                    <label for="password" class="custmessage1">Optional </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3 marginleft">  
+                    <div class="custom-control custom-checkbox">        
+                        <input class="form-check-input" type="checkbox"   name="subscribe" id="subscribe">
+                        <label class="form-check-label margintop3" for="flexCheckDefault">
+                        Subscribe to our newsletter
+                        </label>
+                    </div>      
+                </div>       
+            </div>         
+            <div class="row"> 
+                <div class="col-md-12 mb-3"> 
+                    <button class="btn btn-primary btn-lg btn-block" id="signin" type="submit">Sign In </button> 
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col-md-12 mb-3"> 
+                    <label class="" >By clicking Sign up you agree to our <a style="color: #007bff;">terms of service</a></label>
+                </div>
+            </div>            
+        </form> 
+    </div>
+  </div>
